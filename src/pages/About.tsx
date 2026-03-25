@@ -14,22 +14,22 @@ const values = [
   {
     icon: Heart,
     title: "Client-Centered",
-    description: "Every decision we make puts our clients' needs and dreams at the forefront.",
+    description: "Your vision is our compass. Every recommendation, every negotiation is tailored to your singular ambitions.",
   },
   {
     icon: Shield,
     title: "Integrity",
-    description: "We operate with complete transparency and honesty in all our dealings.",
+    description: "Absolute transparency and discretion in every transaction — because trust is the foundation of lasting partnerships.",
   },
   {
     icon: Target,
     title: "Excellence",
-    description: "We strive for perfection in every service we provide and every relationship we build.",
+    description: "We accept nothing less than perfection, delivering a standard of service worthy of the properties we represent.",
   },
   {
     icon: Star,
     title: "Innovation",
-    description: "We embrace technology and modern methods to enhance your real estate experience.",
+    description: "Cutting-edge market intelligence and digital tools that give our clients a decisive advantage.",
   },
 ];
 
