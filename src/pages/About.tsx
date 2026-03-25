@@ -98,7 +98,7 @@ const About = () => (
     <section className="section-padding max-w-4xl mx-auto">
       <AnimatedSection className="text-center mb-12">
         <h2 className="section-title text-foreground mb-3">Our Values</h2>
-        <p className="text-muted-foreground font-light">The principles that guide everything we do and shape<br />how we serve our clients</p>
+        <p className="text-muted-foreground font-light">The convictions that define our approach and elevate<br />every client experience</p>
       </AnimatedSection>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
         {values.map((v, i) => (
