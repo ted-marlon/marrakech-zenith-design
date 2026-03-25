@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ChatBot from "@/components/ChatBot";
 import Index from "./pages/Index.tsx";
 import Properties from "./pages/Properties.tsx";
 import PropertyDetail from "./pages/PropertyDetail.tsx";
@@ -32,6 +33,7 @@ const App = () => (
           </Routes>
         </main>
         <Footer />
+        <ChatBot />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
