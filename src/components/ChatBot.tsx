@@ -166,7 +166,7 @@ const ChatBot = () => {
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0, opacity: 0 }}
             onClick={() => setOpen(true)}
-            className="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-emerald text-primary-foreground shadow-lg flex items-center justify-center hover:shadow-xl transition-shadow duration-300"
+            className="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-charcoal text-primary-foreground shadow-lg flex items-center justify-center hover:shadow-xl transition-shadow duration-300"
             aria-label="Open chat"
           >
             <MessageSquare size={22} />
@@ -185,7 +185,7 @@ const ChatBot = () => {
             className="fixed bottom-6 right-6 z-50 w-[360px] max-w-[calc(100vw-2rem)] h-[520px] max-h-[calc(100vh-3rem)] rounded-2xl shadow-2xl border border-border bg-background flex flex-col overflow-hidden"
           >
             {/* Header */}
-            <div className="flex items-center justify-between px-5 py-4 border-b border-border bg-emerald">
+            <div className="flex items-center justify-between px-5 py-4 border-b border-border bg-charcoal">
               <div>
                 <h3 className="font-serif text-lg text-primary-foreground tracking-wide">Private Concierge</h3>
                 <p className="text-xs text-primary-foreground/70 font-sans tracking-widest uppercase">Dar·Marrakech</p>
@@ -205,14 +205,14 @@ const ChatBot = () => {
                 <div key={msg.id}>
                   <div className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"} gap-2`}>
                     {msg.role === "assistant" && (
-                      <div className="w-7 h-7 rounded-full bg-emerald/10 flex items-center justify-center shrink-0 mt-1">
-                        <MessageSquare size={13} className="text-emerald" />
+                      <div className="w-7 h-7 rounded-full bg-charcoal/10 flex items-center justify-center shrink-0 mt-1">
+                        <MessageSquare size={13} className="text-charcoal" />
                       </div>
                     )}
                     <div
                       className={`max-w-[75%] px-4 py-2.5 text-sm font-sans leading-relaxed rounded-2xl ${
                         msg.role === "user"
-                          ? "bg-emerald text-primary-foreground rounded-br-sm"
+                          ? "bg-charcoal text-primary-foreground rounded-br-sm"
                           : "bg-secondary text-foreground rounded-bl-sm"
                       }`}
                     >
@@ -232,7 +232,7 @@ const ChatBot = () => {
                         <button
                           key={qr}
                           onClick={() => handleUserInput(qr)}
-                          className="text-xs font-sans px-3 py-1.5 rounded-full border border-emerald/30 text-emerald hover:bg-emerald hover:text-primary-foreground transition-colors duration-200"
+                          className="text-xs font-sans px-3 py-1.5 rounded-full border border-charcoal/30 text-charcoal hover:bg-charcoal hover:text-primary-foreground transition-colors duration-200"
                         >
                           {qr}
                         </button>
@@ -245,8 +245,8 @@ const ChatBot = () => {
               {/* Typing indicator */}
               {typing && (
                 <div className="flex items-center gap-2">
-                  <div className="w-7 h-7 rounded-full bg-emerald/10 flex items-center justify-center shrink-0">
-                    <MessageSquare size={13} className="text-emerald" />
+                  <div className="w-7 h-7 rounded-full bg-charcoal/10 flex items-center justify-center shrink-0">
+                    <MessageSquare size={13} className="text-charcoal" />
                   </div>
                   <div className="bg-secondary rounded-2xl rounded-bl-sm px-4 py-3 flex gap-1">
                     {[0, 1, 2].map((i) => (
@@ -277,12 +277,12 @@ const ChatBot = () => {
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
                   placeholder="Type your message…"
-                  className="flex-1 bg-secondary/50 border border-border rounded-full px-4 py-2.5 text-sm font-sans text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-emerald/30 transition-shadow"
+                  className="flex-1 bg-secondary/50 border border-border rounded-full px-4 py-2.5 text-sm font-sans text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-charcoal/30 transition-shadow"
                 />
                 <button
                   type="submit"
                   disabled={!input.trim()}
-                  className="w-9 h-9 rounded-full bg-emerald text-primary-foreground flex items-center justify-center disabled:opacity-40 hover:shadow-md transition-all duration-200"
+                  className="w-9 h-9 rounded-full bg-charcoal text-primary-foreground flex items-center justify-center disabled:opacity-40 hover:shadow-md transition-all duration-200"
                   aria-label="Send message"
                 >
                   <ArrowRight size={16} />
