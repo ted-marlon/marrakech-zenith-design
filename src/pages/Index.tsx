@@ -92,7 +92,7 @@ const Index = () => {
             <h2 className="section-title text-primary-foreground">A Legacy of Excellence</h2>
             <div className="luxury-divider mt-6 mb-10" />
             <p className="font-light text-primary-foreground/70 leading-relaxed text-lg max-w-2xl mx-auto">
-              For over fifteen years, Dar·Marrakech has been the trusted partner for international clients
+              For over fifteen years, GateOne has been the trusted partner for international clients
               seeking the finest properties in Morocco's most enchanting city. Our intimate knowledge of the
               local market, combined with an uncompromising dedication to discretion, ensures every acquisition
               is truly exceptional.
@@ -173,7 +173,7 @@ const Index = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-4xl mx-auto">
           {[
-            { quote: "Dar·Marrakech found us a riad beyond our wildest dreams. Their expertise and discretion made the entire process effortless.", author: "Sophie Laurent", origin: "Paris, France" },
+            { quote: "GateOne found us a riad beyond our wildest dreams. Their expertise and discretion made the entire process effortless.", author: "Sophie Laurent", origin: "Paris, France" },
             { quote: "An unparalleled level of service. They understood exactly what we were looking for and delivered perfection.", author: "James Whitfield", origin: "London, UK" },
           ].map((t, i) => (
             <AnimatedSection key={i} delay={i * 0.15}>

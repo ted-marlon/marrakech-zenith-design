@@ -18,9 +18,8 @@ const Navbar = () => {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${isHome ? "bg-transparent" : "bg-background/95 backdrop-blur-sm border-b border-border"}`}>
       <div className="flex items-center justify-between px-6 md:px-12 lg:px-24 py-5">
         <Link to="/" className="font-serif text-2xl md:text-3xl font-light tracking-wide">
-          <span className={isHome ? "text-primary-foreground" : "text-foreground"}>Dar</span>
-          <span className="text-accent">·</span>
-          <span className={isHome ? "text-primary-foreground" : "text-foreground"}>Marrakech</span>
+          <span className={isHome ? "text-primary-foreground" : "text-foreground"}>Gate</span>
+          <span className="text-accent">One</span>
         </Link>
 
         {/* Desktop */}
