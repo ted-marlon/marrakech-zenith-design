@@ -54,21 +54,19 @@ const About = () => (
         <h2 className="section-title text-foreground mb-6">Our Mission</h2>
         <div className="luxury-divider mb-10" />
         <p className="text-base font-light leading-relaxed text-muted-foreground mb-6">
-          At GateOne, we believe that finding the perfect property in Marrakech should be more than a simple transaction — it
-          should be a truly exceptional experience. With many years of experience in the Marrakech real estate market, we have
-          assisted numerous clients in discovering luxury villas, traditional riads, and exclusive investment opportunities throughout
-          the Red City.
+          For over a decade, GateOne has been the preferred address for distinguished investors and connoisseurs seeking
+          the finest properties Marrakech has to offer. From centuries-old riads nestled within the Medina's storied walls
+          to contemporary architectural masterpieces in the Palmeraie, we unlock doors that remain closed to others.
         </p>
         <p className="text-base font-light leading-relaxed text-muted-foreground mb-6">
-          As a trusted real estate agency in Marrakech, we specialize in high-end properties and provide tailor-made solutions for
-          both local and international clients. Our dedicated team combines in-depth local knowledge, strong market expertise,
-          and personalized support to guide you through every stage of your real estate journey — whether you are buying, selling,
-          or investing in Marrakech.
+          Our elite team of advisors possesses an intimate understanding of Marrakech's most coveted addresses. We don't
+          simply sell properties — we orchestrate seamless acquisitions, providing bespoke counsel on every aspect of your
+          investment, from due diligence and legal frameworks to interior design and property management.
         </p>
         <p className="text-base font-light leading-relaxed text-muted-foreground">
-          Our mission is to transform the real estate experience in Marrakech by delivering outstanding service, innovative digital
-          solutions, and expert guidance. We strive to empower our clients with the knowledge and confidence they need to make
-          informed decisions in one of Morocco's most dynamic and desirable property markets.
+          Discretion, excellence, and an unwavering commitment to our clients define everything we do. In a market where
+          the most exceptional opportunities are never publicly listed, GateOne's privileged network ensures you always
+          have first access to Marrakech's most prestigious addresses.
         </p>
       </AnimatedSection>
     </section>
