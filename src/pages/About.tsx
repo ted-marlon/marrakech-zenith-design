@@ -120,7 +120,7 @@ const About = () => (
       <AnimatedSection className="text-center max-w-xl mx-auto">
         <h2 className="font-serif text-3xl md:text-4xl text-primary-foreground mb-4">Ready to Work With Us?</h2>
         <p className="text-primary-foreground/60 font-light mb-8 leading-relaxed">
-          Whether you're buying, selling, or investing, our team is here to guide you through every step of your real estate journey.
+          The most exceptional properties are reserved for those who know where to look. Let us open the door.
         </p>
         <Link
           to="/contact"
