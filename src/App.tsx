@@ -33,6 +33,7 @@ const App = () => (
           </Routes>
         </main>
         <Footer />
+        <ChatBot />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
