@@ -14,22 +14,22 @@ const values = [
   {
     icon: Heart,
     title: "Client-Centered",
-    description: "Every decision we make puts our clients' needs and dreams at the forefront.",
+    description: "Your vision is our compass. Every recommendation, every negotiation is tailored to your singular ambitions.",
   },
   {
     icon: Shield,
     title: "Integrity",
-    description: "We operate with complete transparency and honesty in all our dealings.",
+    description: "Absolute transparency and discretion in every transaction — because trust is the foundation of lasting partnerships.",
   },
   {
     icon: Target,
     title: "Excellence",
-    description: "We strive for perfection in every service we provide and every relationship we build.",
+    description: "We accept nothing less than perfection, delivering a standard of service worthy of the properties we represent.",
   },
   {
     icon: Star,
     title: "Innovation",
-    description: "We embrace technology and modern methods to enhance your real estate experience.",
+    description: "Cutting-edge market intelligence and digital tools that give our clients a decisive advantage.",
   },
 ];
 
@@ -42,7 +42,7 @@ const About = () => (
         <div className="text-center max-w-2xl px-6">
           <h1 className="section-title text-primary-foreground mb-4">About Us</h1>
           <p className="text-primary-foreground/70 font-light leading-relaxed text-sm md:text-base">
-            We're not just real estate agents — We're your partners in finding the perfect property and making sound investment decisions. Discover our story, values, and the team that makes it all possible.
+            Where discerning taste meets unparalleled expertise. At GateOne, we curate extraordinary properties for an exclusive clientele who demand nothing less than perfection.
           </p>
         </div>
       </div>
@@ -54,21 +54,19 @@ const About = () => (
         <h2 className="section-title text-foreground mb-6">Our Mission</h2>
         <div className="luxury-divider mb-10" />
         <p className="text-base font-light leading-relaxed text-muted-foreground mb-6">
-          At GateOne, we believe that finding the perfect property in Marrakech should be more than a simple transaction — it
-          should be a truly exceptional experience. With many years of experience in the Marrakech real estate market, we have
-          assisted numerous clients in discovering luxury villas, traditional riads, and exclusive investment opportunities throughout
-          the Red City.
+          For over a decade, GateOne has been the preferred address for distinguished investors and connoisseurs seeking
+          the finest properties Marrakech has to offer. From centuries-old riads nestled within the Medina's storied walls
+          to contemporary architectural masterpieces in the Palmeraie, we unlock doors that remain closed to others.
         </p>
         <p className="text-base font-light leading-relaxed text-muted-foreground mb-6">
-          As a trusted real estate agency in Marrakech, we specialize in high-end properties and provide tailor-made solutions for
-          both local and international clients. Our dedicated team combines in-depth local knowledge, strong market expertise,
-          and personalized support to guide you through every stage of your real estate journey — whether you are buying, selling,
-          or investing in Marrakech.
+          Our elite team of advisors possesses an intimate understanding of Marrakech's most coveted addresses. We don't
+          simply sell properties — we orchestrate seamless acquisitions, providing bespoke counsel on every aspect of your
+          investment, from due diligence and legal frameworks to interior design and property management.
         </p>
         <p className="text-base font-light leading-relaxed text-muted-foreground">
-          Our mission is to transform the real estate experience in Marrakech by delivering outstanding service, innovative digital
-          solutions, and expert guidance. We strive to empower our clients with the knowledge and confidence they need to make
-          informed decisions in one of Morocco's most dynamic and desirable property markets.
+          Discretion, excellence, and an unwavering commitment to our clients define everything we do. In a market where
+          the most exceptional opportunities are never publicly listed, GateOne's privileged network ensures you always
+          have first access to Marrakech's most prestigious addresses.
         </p>
       </AnimatedSection>
     </section>
@@ -100,7 +98,7 @@ const About = () => (
     <section className="section-padding max-w-4xl mx-auto">
       <AnimatedSection className="text-center mb-12">
         <h2 className="section-title text-foreground mb-3">Our Values</h2>
-        <p className="text-muted-foreground font-light">The principles that guide everything we do and shape<br />how we serve our clients</p>
+        <p className="text-muted-foreground font-light">The convictions that define our approach and elevate<br />every client experience</p>
       </AnimatedSection>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
         {values.map((v, i) => (
@@ -122,7 +120,7 @@ const About = () => (
       <AnimatedSection className="text-center max-w-xl mx-auto">
         <h2 className="font-serif text-3xl md:text-4xl text-primary-foreground mb-4">Ready to Work With Us?</h2>
         <p className="text-primary-foreground/60 font-light mb-8 leading-relaxed">
-          Whether you're buying, selling, or investing, our team is here to guide you through every step of your real estate journey.
+          The most exceptional properties are reserved for those who know where to look. Let us open the door.
         </p>
         <Link
           to="/contact"
