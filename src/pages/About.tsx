@@ -1,54 +1,136 @@
 import aboutHero from "@/assets/about-hero.jpg";
 import AnimatedSection from "@/components/AnimatedSection";
+import { Link } from "react-router-dom";
+import { Home, Smile, Award, TrendingUp, Heart, Shield, Target, Star } from "lucide-react";
+
+const stats = [
+  { icon: Home, value: "350+", label: "Properties Sold" },
+  { icon: Smile, value: "1785+", label: "Happy Clients" },
+  { icon: Award, value: "254+", label: "Project Complete" },
+  { icon: TrendingUp, value: "116", label: "Winning Awards" },
+];
+
+const values = [
+  {
+    icon: Heart,
+    title: "Client-Centered",
+    description: "Every decision we make puts our clients' needs and dreams at the forefront.",
+  },
+  {
+    icon: Shield,
+    title: "Integrity",
+    description: "We operate with complete transparency and honesty in all our dealings.",
+  },
+  {
+    icon: Target,
+    title: "Excellence",
+    description: "We strive for perfection in every service we provide and every relationship we build.",
+  },
+  {
+    icon: Star,
+    title: "Innovation",
+    description: "We embrace technology and modern methods to enhance your real estate experience.",
+  },
+];
 
 const About = () => (
   <div className="pt-24">
     {/* Hero */}
     <section className="relative h-[50vh] overflow-hidden">
-      <img src={aboutHero} alt="Marrakech" className="w-full h-full object-cover" loading="lazy" width={1920} height={800} />
-      <div className="absolute inset-0 bg-charcoal/40 flex items-center justify-center">
-        <div className="text-center">
-          <p className="section-subtitle text-primary-foreground/60 mb-4">About Us</p>
-          <h1 className="section-title text-primary-foreground">Our Story</h1>
+      <img src={aboutHero} alt="Marrakech skyline" className="w-full h-full object-cover" loading="lazy" width={1920} height={800} />
+      <div className="absolute inset-0 bg-charcoal/50 flex items-center justify-center">
+        <div className="text-center max-w-2xl px-6">
+          <h1 className="section-title text-primary-foreground mb-4">About Us</h1>
+          <p className="text-primary-foreground/70 font-light leading-relaxed text-sm md:text-base">
+            We're not just real estate agents — We're your partners in finding the perfect property and making sound investment decisions. Discover our story, values, and the team that makes it all possible.
+          </p>
         </div>
       </div>
     </section>
 
+    {/* Our Mission */}
     <section className="section-padding max-w-4xl mx-auto">
       <AnimatedSection className="text-center">
+        <h2 className="section-title text-foreground mb-6">Our Mission</h2>
         <div className="luxury-divider mb-10" />
-        <p className="text-lg font-light leading-relaxed text-foreground/80 mb-8">
-          Founded in 2008, Dar·Marrakech was born from a passion for Moroccan architecture and a desire to share the magic
-          of Marrakech with the world. What began as a small boutique agency has grown into the city's most trusted name in
-          luxury real estate.
+        <p className="text-base font-light leading-relaxed text-muted-foreground mb-6">
+          At GateOne, we believe that finding the perfect property in Marrakech should be more than a simple transaction — it
+          should be a truly exceptional experience. With many years of experience in the Marrakech real estate market, we have
+          assisted numerous clients in discovering luxury villas, traditional riads, and exclusive investment opportunities throughout
+          the Red City.
         </p>
-        <p className="text-lg font-light leading-relaxed text-foreground/80 mb-8">
-          Our team of seasoned experts combines deep local knowledge with international sophistication. We understand that
-          acquiring a property in Marrakech is more than a transaction — it's the beginning of a love affair with a city that
-          has captivated travelers, artists, and visionaries for centuries.
+        <p className="text-base font-light leading-relaxed text-muted-foreground mb-6">
+          As a trusted real estate agency in Marrakech, we specialize in high-end properties and provide tailor-made solutions for
+          both local and international clients. Our dedicated team combines in-depth local knowledge, strong market expertise,
+          and personalized support to guide you through every stage of your real estate journey — whether you are buying, selling,
+          or investing in Marrakech.
         </p>
-        <p className="text-lg font-light leading-relaxed text-foreground/80">
-          Whether you seek a traditional riad in the heart of the Medina, a contemporary villa in the Palmeraie, or a
-          profitable investment opportunity, we offer a level of service that is as exceptional as the properties we represent.
+        <p className="text-base font-light leading-relaxed text-muted-foreground">
+          Our mission is to transform the real estate experience in Marrakech by delivering outstanding service, innovative digital
+          solutions, and expert guidance. We strive to empower our clients with the knowledge and confidence they need to make
+          informed decisions in one of Morocco's most dynamic and desirable property markets.
         </p>
       </AnimatedSection>
     </section>
 
-    {/* Stats */}
-    <section className="bg-charcoal text-primary-foreground section-padding">
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto text-center">
-        {[
-          { value: "15+", label: "Years of Experience" },
-          { value: "200+", label: "Properties Sold" },
-          { value: "€500M+", label: "Total Transactions" },
-          { value: "30+", label: "Countries Served" },
-        ].map((s, i) => (
+    {/* Our Track Record */}
+    <section className="bg-muted section-padding">
+      <div className="max-w-4xl mx-auto text-center">
+        <AnimatedSection>
+          <h2 className="section-title text-foreground mb-3">Our Track Record</h2>
+          <p className="text-muted-foreground font-light mb-12">Numbers that reflect our commitment to excellence</p>
+        </AnimatedSection>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          {stats.map((s, i) => (
+            <AnimatedSection key={i} delay={i * 0.1}>
+              <div className="bg-background rounded-lg p-6 border border-border hover-lift">
+                <div className="w-14 h-14 mx-auto mb-4 rounded-full border border-border flex items-center justify-center">
+                  <s.icon className="w-6 h-6 text-foreground" strokeWidth={1.5} />
+                </div>
+                <p className="font-serif text-3xl text-foreground mb-1">{s.value}</p>
+                <p className="text-xs uppercase tracking-widest text-muted-foreground">{s.label}</p>
+              </div>
+            </AnimatedSection>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* Our Values */}
+    <section className="section-padding max-w-4xl mx-auto">
+      <AnimatedSection className="text-center mb-12">
+        <h2 className="section-title text-foreground mb-3">Our Values</h2>
+        <p className="text-muted-foreground font-light">The principles that guide everything we do and shape<br />how we serve our clients</p>
+      </AnimatedSection>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        {values.map((v, i) => (
           <AnimatedSection key={i} delay={i * 0.1}>
-            <p className="font-serif text-4xl text-accent mb-2">{s.value}</p>
-            <p className="text-xs uppercase tracking-widest text-primary-foreground/50">{s.label}</p>
+            <div className="bg-background rounded-lg border border-border p-6 text-center hover-lift">
+              <div className="w-14 h-14 mx-auto mb-4 rounded-full border border-border flex items-center justify-center">
+                <v.icon className="w-6 h-6 text-foreground" strokeWidth={1.5} />
+              </div>
+              <h3 className="font-serif text-lg text-foreground mb-2">{v.title}</h3>
+              <p className="text-sm text-muted-foreground font-light leading-relaxed">{v.description}</p>
+            </div>
           </AnimatedSection>
         ))}
       </div>
+    </section>
+
+    {/* CTA Section */}
+    <section className="bg-charcoal section-padding">
+      <AnimatedSection className="text-center max-w-xl mx-auto">
+        <h2 className="font-serif text-3xl md:text-4xl text-primary-foreground mb-4">Ready to Work With Us?</h2>
+        <p className="text-primary-foreground/60 font-light mb-8 leading-relaxed">
+          Whether you're buying, selling, or investing, our team is here to guide you through every step of your real estate journey.
+        </p>
+        <Link
+          to="/contact"
+          className="inline-block bg-accent text-accent-foreground px-8 py-3 rounded-full font-sans text-sm uppercase tracking-widest hover:opacity-90 transition-opacity"
+        >
+          Get in Touch
+        </Link>
+      </AnimatedSection>
     </section>
   </div>
 );
