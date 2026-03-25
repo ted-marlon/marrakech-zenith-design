@@ -42,7 +42,7 @@ const About = () => (
         <div className="text-center max-w-2xl px-6">
           <h1 className="section-title text-primary-foreground mb-4">About Us</h1>
           <p className="text-primary-foreground/70 font-light leading-relaxed text-sm md:text-base">
-            We're not just real estate agents — We're your partners in finding the perfect property and making sound investment decisions. Discover our story, values, and the team that makes it all possible.
+            Where discerning taste meets unparalleled expertise. At GateOne, we curate extraordinary properties for an exclusive clientele who demand nothing less than perfection.
           </p>
         </div>
       </div>
