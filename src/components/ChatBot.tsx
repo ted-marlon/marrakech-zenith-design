@@ -64,7 +64,7 @@ const ChatBot = () => {
   useEffect(() => {
     if (open && messages.length === 0) {
       addAssistant(
-        "Welcome to Dar·Marrakech. I'm your private concierge, here to help you discover exceptional properties in Marrakech. How may I assist you today?",
+        "Welcome to GateOne. I'm your private concierge, here to help you discover exceptional properties in Marrakech. How may I assist you today?",
         ["Browse villas", "Search by budget", "Book a visit", "Contact an advisor"]
       );
     }
@@ -188,7 +188,7 @@ const ChatBot = () => {
             <div className="flex items-center justify-between px-5 py-4 border-b border-border bg-charcoal">
               <div>
                 <h3 className="font-serif text-lg text-primary-foreground tracking-wide">Private Concierge</h3>
-                <p className="text-xs text-primary-foreground/70 font-sans tracking-widest uppercase">Dar·Marrakech</p>
+                <p className="text-xs text-primary-foreground/70 font-sans tracking-widest uppercase">GateOne Real Estate</p>
               </div>
               <button
                 onClick={() => setOpen(false)}

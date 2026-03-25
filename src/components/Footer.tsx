@@ -6,7 +6,7 @@ const Footer = () => (
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16">
         <div>
           <h3 className="font-serif text-2xl font-light mb-4">
-            Dar<span className="text-accent">·</span>Marrakech
+            Gate<span className="text-accent">One</span>
           </h3>
           <p className="text-primary-foreground/60 font-light text-sm leading-relaxed max-w-xs">
             Curating exceptional properties in Marrakech for the world's most discerning clients since 2008.
@@ -38,14 +38,14 @@ const Footer = () => (
             <p>Gueliz, Avenue Mohammed V</p>
             <p>Marrakech 40000, Morocco</p>
             <p className="text-accent">+212 524 000 000</p>
-            <p>contact@darmarrakech.com</p>
+            <p>contact@gateone.ma</p>
           </div>
         </div>
       </div>
 
       <div className="mt-16 pt-8 border-t border-primary-foreground/10 text-center">
         <p className="text-primary-foreground/30 text-xs tracking-widest uppercase">
-          © {new Date().getFullYear()} Dar·Marrakech — All rights reserved
+          © {new Date().getFullYear()} GateOne — All rights reserved
         </p>
       </div>
     </div>

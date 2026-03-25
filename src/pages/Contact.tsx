@@ -49,7 +49,7 @@ const Contact = () => (
               {[
                 { icon: MapPin, text: "Avenue Mohammed V, Gueliz\nMarrakech 40000, Morocco" },
                 { icon: Phone, text: "+212 524 000 000" },
-                { icon: Mail, text: "contact@darmarrakech.com" },
+                { icon: Mail, text: "contact@gateone.ma" },
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-4">
                   <item.icon size={20} className="text-accent mt-1 shrink-0" strokeWidth={1.5} />
